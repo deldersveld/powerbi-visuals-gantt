@@ -204,7 +204,7 @@
             "displayNameKey": "Visual_General",
             "properties": {
                 "groupTasks": {
-                    "displayName": "Group Tasks",
+                    "displayName": "Group Projects",
                     "displayNameKey": "Visual_GroupTasks",
                     "type": {
                         "bool": true
@@ -322,9 +322,9 @@
             }
         },
         "legend": {
-            "displayName": "Legend",
+            "displayName": "Phase",
             "displayNameKey": "Visual_Legend",
-            "description": "Display legend options",
+            "description": "Display phase options",
             "properties": {
                 "show": {
                     "displayName": "Show",
@@ -336,7 +336,7 @@
                 "position": {
                     "displayName": "Position",
                     "displayNameKey": "Visual_Position",
-                    "description": "Select the location for the legend",
+                    "description": "Select the location for the phase legend",
                     "type": {
                         "enumeration": [
                             {
@@ -385,13 +385,13 @@
                 "showTitle": {
                     "displayName": "Title",
                     "displayNameKey": "Visual_Title",
-                    "description": "Display a title for legend symbols",
+                    "description": "Display a title for phase symbols",
                     "type": {
                         "bool": true
                     }
                 },
                 "titleText": {
-                    "displayName": "Legend Name",
+                    "displayName": "Phase Name",
                     "displayNameKey": "Visual_LegendName",
                     "description": "Title text",
                     "type": {
@@ -420,7 +420,7 @@
                     }
                 },
                 "fill": {
-                    "displayName": "Legend color",
+                    "displayName": "Phase color",
                     "displayNameKey": "Visual_LegendColor",
                     "type": {
                         "fill": {
