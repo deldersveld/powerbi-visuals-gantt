@@ -58,20 +58,20 @@ module powerbi.extensibility.visual {
         position: string = "Right";
         showTitle: boolean = true;
         titleText: string = "";
-        labelColor: string = "#000000";
+        labelColor: string = "#333333";
         fontSize: number = 8;
     }
 
     export class TaskLabelsSettings {
         show: boolean = true;
-        fill: string = "#000000";
+        fill: string = "#333333";
         fontSize: number = 9;
         width: number = 110;
     }
 
     export class TaskConfigSettings {
         fill: string = "#00B099";
-        height: number = 40;
+        height: number = 30;
     }
 
     export class TaskCompletionSettings {
@@ -87,10 +87,10 @@ module powerbi.extensibility.visual {
 
     export class DateTypeSettings {
         // tslint:disable-next-line:no-reserved-keywords
-        type: DateTypes = DateTypes.Week;
-        todayColor: string = "#000000";
-        axisColor: string = "#000000";
-        axisTextColor: string = "#000000";
+        type: DateTypes = DateTypes.Month;
+        todayColor: string = "#333333";
+        axisColor: string = "#333333";
+        axisTextColor: string = "#333333";
     }
 
     export class TooltipConfigSettings {

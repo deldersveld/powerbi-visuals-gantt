@@ -1,22 +1,22 @@
 {
     "dataRoles": [
         {
-            "name": "Legend",
-            "displayName": "Legend",
-            "displayNameKey": "Role_Legend",
+            "name": "Task",
+            "displayName": "Project",
+            "displayNameKey": "Role_Task",
             "kind": "Grouping"
         },
-        {
-            "name": "Task",
-            "displayName": "Task",
-            "displayNameKey": "Role_Task",
+		{
+            "name": "Legend",
+            "displayName": "Phase",
+            "displayNameKey": "Role_Legend",
             "kind": "Grouping"
         },
         {
             "name": "StartDate",
             "displayName": "Start Date",
             "displayNameKey": "Role_StartDate",
-            "kind": "Grouping"
+            "kind": "GroupingOrMeasure"
         },
         {
             "name": "Duration",
@@ -48,7 +48,7 @@
         },
         {
             "name": "Resource",
-            "displayName": "Resource",
+            "displayName": "Milestone",
             "displayNameKey": "Role_Resource",
             "kind": "Grouping"
         },
@@ -432,8 +432,33 @@
                 }
             }
         },
+		"taskConfig": {
+            "displayName": "Project Settings",
+            "displayNameKey": "Visual_TaskSettings",
+            "properties": {
+                "fill": {
+                    "displayName": "Task color",
+                    "displayNameKey": "Visual_TaskSettings_Color",
+                    "description": "This ONLY takes effect when you have no phase specified",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "height": {
+                    "displayName": "Height",
+                    "displayNameKey": "Visual_TaskSettings_Height",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
         "taskLabels": {
-            "displayName": "Category Labels",
+            "displayName": "Project Labels",
             "displayNameKey": "Visual_CategoryLabels",
             "properties": {
                 "show": {
@@ -507,31 +532,6 @@
                 }
             }
         },
-        "taskConfig": {
-            "displayName": "Task Settings",
-            "displayNameKey": "Visual_TaskSettings",
-            "properties": {
-                "fill": {
-                    "displayName": "Task color",
-                    "displayNameKey": "Visual_TaskSettings_Color",
-                    "description": "This ONLY takes effect when you have no legend specified",
-                    "type": {
-                        "fill": {
-                            "solid": {
-                                "color": true
-                            }
-                        }
-                    }
-                },
-                "height": {
-                    "displayName": "Height",
-                    "displayNameKey": "Visual_TaskSettings_Height",
-                    "type": {
-                        "numeric": true
-                    }
-                }
-            }
-        },
         "taskResource": {
             "displayName": "Data Labels",
             "displayNameKey": "Visual_DataLabels",
@@ -574,21 +574,6 @@
                     "displayNameKey": "Visual_Type",
                     "type": {
                         "enumeration": [
-                            {
-                                "value": "Second",
-                                "displayName": "Second",
-                                "displayNameKey": "Visual_DateType_Second"
-                            },
-                            {
-                                "value": "Minute",
-                                "displayName": "Minute",
-                                "displayNameKey": "Visual_DateType_Minute"
-                            },
-                            {
-                                "value": "Hour",
-                                "displayName": "Hour",
-                                "displayNameKey": "Visual_DateType_Hour"
-                            },
                             {
                                 "value": "Day",
                                 "displayName": "Day",

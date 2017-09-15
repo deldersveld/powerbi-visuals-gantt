@@ -124,9 +124,9 @@ module powerbi.extensibility.visual {
     ];
 
      export enum DateTypes {
-        Second = <any>"Second",
-        Minute = <any>"Minute",
-        Hour = <any>"Hour",
+        //Second = <any>"Second",
+        //Minute = <any>"Minute",
+        //Hour = <any>"Hour",
         Day = <any>"Day",
         Week = <any>"Week",
         Month = <any>"Month",
@@ -1062,7 +1062,7 @@ module powerbi.extensibility.visual {
 
         private static getDateType(dateType: DateTypes): number {
             switch (dateType) {
-                case DateTypes.Second:
+                /*case DateTypes.Second:
                     return MillisecondsInASecond;
 
                 case DateTypes.Minute:
@@ -1070,7 +1070,7 @@ module powerbi.extensibility.visual {
 
                 case DateTypes.Hour:
                     return MillisecondsInAHour;
-
+*/
                 case DateTypes.Day:
                     return MillisecondsInADay;
 
@@ -1654,12 +1654,12 @@ module powerbi.extensibility.visual {
 
             if (!milestoneTitle) {
                 switch (this.viewModel.settings.dateType.type) {
-                    case DateTypes.Second:
-                    case DateTypes.Minute:
-                    case DateTypes.Hour:
-                        milestoneTitle = LabelsForDateTypes.Now;
-                        dateTime = new Date(timestamp).toLocaleString();
-                        break;
+                    //case DateTypes.Second:
+                    //case DateTypes.Minute:
+                    //case DateTypes.Hour:
+                    //    milestoneTitle = LabelsForDateTypes.Now;
+                    //    dateTime = new Date(timestamp).toLocaleString();
+                    //    break;
                     default:
                         milestoneTitle = LabelsForDateTypes.Today;
                 }
